@@ -9,6 +9,8 @@
 	height: 40px;
 	background-color: red;
 	border-radius: 50%;
+	position: absolute;
+	
 }
 .holst {
 	 width: 600px;
@@ -25,8 +27,16 @@
 
 
 </div>
-	<script src="main.js">
-	
+	<script>
+	holst.addEventListener('click', function () {
+    var target = this;
+    var figure = document.createElement('div');
+    figure.className = 'figure';
+    target.appendChild(figure);
+    figure.style.left=event.clientX + 'px';
+	figure.style.top=event.clientY + 'px';
+})
+
 	</script>
 </body>
 </html>
