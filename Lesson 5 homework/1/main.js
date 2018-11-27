@@ -3,7 +3,6 @@ holst.addEventListener('click', function () {
     var figure = document.createElement('div');
     figure.className = 'figure';
     target.appendChild(figure);
-    mousex = event.clientX;
-    mousey = event.clientY;
-
+    figure.style.left=event.clientX + 'px';
+	figure.style.top=event.clientY + 'px';
 })
