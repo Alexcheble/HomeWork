@@ -6,30 +6,59 @@
 <style>
 
 .auto {
-	margin: auto;
-	width: 200px;
+margin: auto;
+display: flex;
+justify-content: center;
+padding-top: 50px;
+}
+
+.Colors {
+margin: auto;
+margin: auto;
+display: flex;
+justify-content: center;
 }
 
 .circle {
-border-radius: 50%;
-}
-
-.block {
 width: 40px;
 height: 40px;
 background-color: red;
 position: absolute;
+border-radius: 50%;
 }
 
 .square {
+width: 40px;
+height: 40px;
+background-color: red;
+position: absolute;
 border-radius: none;
+}
+
+.Blue {
+	background-color: blue;
+}
+
+.Yellow {
+	background-color: yellow;
+	
+}
+
+.Red {
+	background-color: red;
+	
+}
+
+.Green {
+	background-color: green;
+
 }
 
 .holst {
 width: 600px;
 height: 600px;
 border: 5px solid lightgray;
-margin: 100px auto;
+margin: 50px auto;
 }
 
 </style>
@@ -44,6 +73,20 @@ margin: 100px auto;
 	<input id="squared" value="square" type="radio" class="figura-element" name="znak"></input>
 	</label>
 	</form>
+	</div>
+	<div class="Colors">
+	<label>Синий
+	<input id="blueD" value="Blue" type="radio" class="figura-color" name="color" checked></input>
+	</label>
+	<label>Жёлтый
+	<input id="yellowD" value="Yellow" type="radio" class="figura-color" name="color"></input>
+	</label>
+	<label>Красный
+	<input id="redD" value="Red" type="radio" class="figura-color" name="color"></input>
+	</label>
+	<label>Зеленый
+	<input id="greenD" value="Green" type="radio" class="figura-color" name="color"></input>
+	</label>
 	</div>
 <div class="holst" id="holst">
 </div>
