@@ -1,0 +1,29 @@
+body {
+	font-family: 'Unlock', cursive;
+	font-family: 'Gamja Flower', cursive;
+	background-color: lightyellow;
+}
+
+button {
+	background: none;
+	outline: none;
+	border: 2px solid lightgreen;
+}
+
+button:hover {
+	background: lightgreen;
+}
+
+button:active {
+	background: lightyellow;
+}
+
+.Burgerosik {
+	padding-top: 50px;
+	text-align: center;
+}
+
+.Burger-button-text {
+	font-family: 'Unlock', cursive;
+	font-family: 'Gamja Flower', cursive;
+}

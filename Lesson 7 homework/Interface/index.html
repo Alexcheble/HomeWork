@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>7interface</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Gamja+Flower|Unlock" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="Burgerosik">    
+    
+        <h1> Замути гамбургер: </h1>
+        
+        <div id = "Burgersize"> <h2>1. Размер булки: </h2>
+
+        	<label>
+        		<input type="radio" name="size"  id="Small" checked>
+        				Булка малого размера (Цена: 50 тугриков, Энергия (Кк): 20);
+        	</label>
+
+        	<br>
+        	<br>
+
+        	<label>
+        		<input type="radio" name="size" id="Large">
+        			Булка большого размера (Цена: 100 тугриков, Энергия (Кк): 40);
+        	</label>
+
+        </div>
+		<br>
+        <div id = "Filling"> <h3>2. Начинка: </h3>
+        	<p><label>
+        			<input type="radio" name="stuffing" id="Cheese" checked>
+        		 			1. Сыр (Цена: 10 тугриков, Энергия (Кк): 20);
+        		</label>
+        	</p>
+			<p><label>
+        			<input type="radio" name="stuffing" id="Salad">
+        					2. Салат (Цена: 20 тугриков, Энергия (Кк): 5);
+        		</label>
+        	</p>
+            <p><label>
+                    <input type="radio" name="stuffing" id="Potato">
+                            2. Картофель фрии (Цена: 15 тугриков, Энергия (Кк): 10);
+                </label>
+            </p>
+        </div>
+		<br>
+		<div id = "Topping"> <h4>3. Топпинг: </h4>
+        	<p><label>
+        			<input type="checkbox" name="topping" value="TOPPING_SPICE" checked>
+        					Специи (Цена: 15 тугриков, Энергия (Кк): 0 );
+        		</label>
+        	</p>
+            <p><label>
+        			<input type="checkbox" name="topping" value="TOPPING_MAYO">
+        					Майонез (Цена: 20 тугриков, Энергия (Кк): 5 );
+        		</label>
+        	</p>
+        </div>
+		<br>
+		<div class="area" id="area"></div>
+    	<div >
+
+        	<button  id ="Burgervalue"><span class="Burger-button-text">Подтвердить</span></button>
+
+        	<h4>Итоговая стоимость гамбургера: <span id = "Burgerprice"></span><span>Тугриков &#128519; </span></h4>
+        	
+        	<h4>Энергия: <span id = "Burgerenergy"></span><span> Ккал &#128514; </span></h4>
+        	
+    	</div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
