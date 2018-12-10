@@ -1,0 +1,43 @@
+body {
+	background-color: darkblue;
+	padding-top: 200px;
+}
+
+.accordion {
+	list-style-type: none;
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	margin: 0.5rem 0 1rem 0;
+	margin: auto;
+	padding-left: 0;
+	width: 30%;
+}
+
+.accordion-header{
+	background-color: black;
+	color: yellow;
+	border-bottom: 1px solid #ddd;
+	cursor: pointer;
+	min-height: 3rem;
+	line-height: 3rem;
+	padding: 0 1rem;
+}
+
+.accordion-header:after{
+	content: '\2639';
+	font-size: 2rem;
+	float: right;
+}
+
+.accordion-header.active:after{
+	content: '\263A';	
+}
+
+.accordion-body{
+	background-color: black;
+	color: yellow;
+	display: none;
+	padding: 1rem;
+	border-bottom: 1px solid #777;
+}
