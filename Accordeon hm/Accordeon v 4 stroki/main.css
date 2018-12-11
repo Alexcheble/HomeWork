@@ -1,0 +1,30 @@
+body {
+	background-color: black;
+	padding-top: 200px;
+}
+
+.accordeon {
+	width: 30%;
+	margin: auto;
+	border: 2px solid red;
+	color: red;
+}
+
+dl {
+	padding: 0.5em;
+}
+
+dt {
+	cursor: pointer;
+}
+
+dd {
+	border: 1px solid blue;
+	padding: 0.5em;
+}
+
+dd:after {
+	content: '\2639';
+	font-size: 1rem;
+	float: right;
+}
